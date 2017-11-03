@@ -26,8 +26,8 @@
     Author: Markus Scholtes
     Revision History:
         06/13/2016 : Markus Scholtes - Created.
-		05/09/2017 : Bryan Scarbrough - Added Function scope and parameters and included Get-Tabs and Close-All functions
-										to add automation to Close and Close-All/Close-IE
+	05/09/2017 : Bryan Scarbrough - Added Function scope and parameters and included Get-Tabs and Close-All functions
+					to add automation to Close and Close-All/Close-IE
 		
 .LINK
     https://gallery.technet.microsoft.com/scriptcenter/Create-or-close-tabs-in-cc6a4e39
