@@ -28,24 +28,6 @@
         05/11/2017 : Bryan Scarbrough - Bypassed elevated privilege session and configured sleep time of
                                         script to run approximately 60 seconds before logoff
 #>
-<#
-sleep 180
-
-$total_sleep_time = get-content c:\scripts\logoff\logoff_time.txt
-sleep ($total_sleep_time - 240)
-
-. "C:\scripts\Currently-LoggedIn.ps1"
-$next_user = get-random (Get-NextLogin "C:\scripts\txt-docs\internal_users.txt")
-
-
-
-$admin_user = "3bct4id\administrator"
-$admin_pass = ConvertTo-SecureString '1qaz2wsx#EDC$RFV' -AsPlainText -Force
-$cred = New-Object -TypeName System.Management.Automation.PSCredential($admin_user,$admin_pass)
-$elevated_sess = New-PSSession -Credential $cred
-
-Invoke-Command -Session $elevated_sess -Script {
-#>
 
 . "C:\scripts\Currently-LoggedIn.ps1"
 $next_user = ""
